@@ -38,10 +38,10 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
 
       <div className="border-t py-4">
         <div className="container flex max-w-6xl items-center justify-between">
-          {/* <span className="text-muted-foreground text-sm">
-            Copyright &copy; 2024. All rights reserved.
-          </span> */}
-          <p className="text-left text-sm text-muted-foreground">
+          <span className="text-muted-foreground text-sm">
+            Copyright &copy; Blitzbuild 2024. All rights reserved.
+          </span>
+          {/* <p className="text-left text-sm text-muted-foreground">
             Built by{" "}
             <Link
               href={siteConfig.links.twitter}
@@ -69,7 +69,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             >
               Popsy
             </Link>
-          </p>
+          </p> */}
 
           <div className="flex items-center gap-3">
             <Link
