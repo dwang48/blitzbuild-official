@@ -26,8 +26,8 @@ export async function GET(req: Request) {
         : values.heading
 
     const { mode } = values
-    const paint = mode === "dark" ? "#fff" : "#000"
-
+    // const paint = mode === "dark" ? "#fff" : "#000"
+    const paint = mode === "dark" ? "#000" : "#000"
     const fontSize = heading.length > 80 ? "60px" : "80px"
 
     const githubName = "mickasmt";
