@@ -90,11 +90,12 @@ export default function BentoGrid() {
               </div>
               <div className="relative z-10 mt-8 space-y-1.5 text-center">
                 <h2 className="text-lg font-medium text-foreground">
-                  Secure by default
+                  Secure Software Development
                 </h2>
                 <p className="text-muted-foreground">
-                  Provident fugit and vero voluptate. magnam magni doloribus
-                  dolores voluptates a sapiente nisi.
+                  Our low-code platform prioritizes secure and agile software
+                  development, enabling you to build applications quickly and
+                  safely.
                 </p>
               </div>
             </div>
@@ -187,18 +188,19 @@ export default function BentoGrid() {
               </div>
               <div className="relative z-10 mt-8 space-y-1.5 text-center">
                 <h2 className="text-lg font-medium text-foreground">
-                  Faster than light
+                  Blazing-Fast Performance
                 </h2>
                 <p className="text-muted-foreground">
-                  Provident fugit vero voluptate. magnam magni doloribus dolores
-                  voluptates inventore nisi.
+                  Our team of expert network engineers deliver low-latency and
+                  highly scalable solutions, ensuring lightning-fast performance
+                  and seamless load balancing for your applications.
                 </p>
               </div>
             </div>
           </div>
 
           {/* Second row */}
-          <div className="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3">
+          {/* <div className="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 lg:col-span-3">
             <div className="grid sm:grid-cols-2">
               <div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6">
                 <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:bg-white/5 dark:before:border-white/5 dark:before:bg-white/5">
@@ -359,7 +361,7 @@ export default function BentoGrid() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </MaxWidthWrapper>
     </section>

@@ -13,7 +13,8 @@ export default function PreviewLanding() {
               src="/images/blog/blog-post-3.jpg"
               alt="preview landing"
               width={2000}
-              height={1000}
+              height={2000}
+              objectFit="cover"
               priority={true}
             />
           </div>

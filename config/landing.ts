@@ -2,10 +2,9 @@ import { InfoLdg } from "types";
 
 export const infos: InfoLdg[] = [
   {
-    title: "Empower your projects",
-    description:
-      "Unlock the full potential of your projects with our open-source SaaS platform. Collaborate seamlessly, innovate effortlessly, and scale limitlessly.",
-    image: "/images/work-from-home.jpg",
+    title: "Empower Your Projects",
+    description: "Unlock the full potential of your projects with our open-source SaaS platform. Collaborate seamlessly, innovate effortlessly, and scale limitlessly.",
+    image: "/images/hero.png",
     list: [
       {
         title: "Collaborative",
@@ -14,13 +13,12 @@ export const infos: InfoLdg[] = [
       },
       {
         title: "Innovative",
-        description: "Stay ahead of the curve with access constant updates.",
+        description: "Stay ahead of the curve with access to constant updates.",
         icon: "settings",
       },
       {
         title: "Scalable",
-        description:
-          "Our platform offers the scalability needed to adapt to your needs.",
+        description: "Our platform offers the scalability needed to adapt to your evolving needs.",
         icon: "search",
       },
     ],

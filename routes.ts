@@ -5,10 +5,10 @@
  */
 export const publicRoutes = [
   "/",
-  "/blog",
-  "/docs",
+  // "/blog",
+  // "/docs",
   "/guides",
-  "/pricing",
+  // "/pricing",
   "/terms",
   "/privacy",
 ];

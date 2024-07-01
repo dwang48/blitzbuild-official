@@ -102,7 +102,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
             </div>
           ) : null}
 
-          {session ? (
+          {/* {session ? (
             <>
               {dashBoard ? (
                 <UserAccountNav user={session.user} />
@@ -138,7 +138,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
                 <Skeleton className="h-9 w-24 rounded-full" />
               )}
             </div>
-          )}
+          )} */}
         </div>
       </MaxWidthWrapper>
     </header>

@@ -128,7 +128,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
               rounded="full"
               onClick={() => setShowSignInModal(true)}
             >
-              Sign in
+
             </Button>
           )}
         </div>

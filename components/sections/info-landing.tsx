@@ -47,7 +47,7 @@ export default function InfoLanding({
             reverse ? "order-1" : "order-2",
           )}
         >
-          <div className="aspect-video">
+          <div className="aspect-[5/5]">
             <Image
               className="size-full object-cover object-center"
               src={data.image}

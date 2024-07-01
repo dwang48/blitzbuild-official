@@ -26,6 +26,13 @@ import {
   User,
   X,
 } from "lucide-react";
+import CustomLogo from './logo.svg';
+
+
+const CustomLogoComponent = () => (
+  <img src={CustomLogo.src} alt="Custom Logo" style={{ width: "5%", height: "auto" }} />
+);
+
 
 export type Icon = LucideIcon;
 
@@ -76,7 +83,8 @@ export const Icons = {
   ),
   help: HelpCircle,
   laptop: Laptop,
-  logo: Puzzle,
+  // logo: Puzzle,
+  logo:CustomLogoComponent,
   media: Image,
   moon: Moon,
   page: File,
