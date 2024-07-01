@@ -14,7 +14,7 @@ export default function PreviewLanding() {
               alt="preview landing"
               width={2000}
               height={2000}
-              objectFit="cover"
+              object-fit="cover"
               priority={true}
             />
           </div>
