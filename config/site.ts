@@ -10,7 +10,7 @@ export const siteConfig: SiteConfig = {
   url: site_url,
   ogImage: `${site_url}/logo.png`,
   links: {
-    twitter: "https://twitter.com/blitzbuild",
+    twitter: "hhttps://x.com/Blitzbuild_soft",
     github: "https://github.com/dwang48",
   },
   mailSupport: "info@blitzbuild.net",

@@ -28,7 +28,7 @@ export default async function HeroLanding() {
       <div className="container flex max-w-5xl flex-col items-center gap-5 text-center">
         {/* Want animations? Check here: https://github.com/mickasmt/next-saas-stripe-starter/blob/76eb9f2b70b29c7a734ff0e5b047796ed2dac28d/app/(marketing)/page.tsx */}
         <Link
-          href="https://twitter.com/blitzbuild"
+          href="https://x.com/Blitzbuild_soft"
           className={cn(
             buttonVariants({ variant: "outline", size: "sm", rounded: "full" }),
             "px-4",
