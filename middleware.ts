@@ -11,6 +11,7 @@ import authConfig from "./auth.config";
 
 const { auth: middleware } = NextAuth(authConfig);
 
+
 export default middleware(
   (req: NextRequest & { auth: Session | null }): Response | void => {
     const { nextUrl } = req;
@@ -21,7 +22,7 @@ export default middleware(
       if (route === "/") {
         return nextUrl.pathname === route;
       } else {
-        return nextUrl.pathname.startsWith(route);
+        return nextUrl.pathname === route || nextUrl.pathname.startsWith(`${route}/`);
       }
     });
 

@@ -29,10 +29,10 @@ export const footerLinks: SidebarNavItem[] = [
   {
     title: "Product",
     items: [
-      { title: "Security", href: "#" },
-      { title: "Customization", href: "#" },
-      { title: "Customers", href: "#" },
-      { title: "Changelog", href: "#" },
+      { title: "Security", href: "/security" },
+      { title: "Customization", href: "/customization" },
+      { title: "Customers", href: "/customers" },
+      // { title: "Changelog", href: "#" },
     ],
   },
   // {
