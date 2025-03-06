@@ -16,6 +16,7 @@ export const publicRoutes = [
   "/use-cases",
   "/contact",
   "/case-studies",
+  "/customers",
 ];
 
 /**
