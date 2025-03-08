@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 
 // You would replace these with actual customer logos and case studies
 const customers = [
-  { name: "Acme Corp", industry: "Manufacturing", logo: "/logos/acme.svg" },
-  { name: "TechNova", industry: "Technology", logo: "/logos/technova.svg" },
-  { name: "FinEdge", industry: "Financial Services", logo: "/logos/finedge.svg" },
-  { name: "MediCare", industry: "Healthcare", logo: "/logos/medicare.svg" },
-  { name: "RetailPlus", industry: "Retail", logo: "/logos/retailplus.svg" },
-  { name: "LogiTech", industry: "Logistics", logo: "/logos/logitech.svg" },
+  { name: "Acme Corp", industry: "Manufacturing", logo: "/placeholder-logo.svg" },
+  { name: "TechNova", industry: "Technology", logo: "/placeholder-logo.svg" },
+  { name: "FinEdge", industry: "Financial Services", logo: "/placeholder-logo.svg" },
+  { name: "MediCare", industry: "Healthcare", logo: "/placeholder-logo.svg" },
+  { name: "RetailPlus", industry: "Retail", logo: "/placeholder-logo.svg" },
+  { name: "LogiTech", industry: "Logistics", logo: "/placeholder-logo.svg" },
 ];
 
 const caseStudies = [
