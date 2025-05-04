@@ -40,11 +40,11 @@ export default function VitaHealthPage() {
           ulcerative colitis—to make informed dietary choices and adopt
           healthier lifestyles. The application provides personalized
           nutritional insights, risk assessments, and practical guidance tailored
-          to each user's unique health profile.
+          to each user&apos;s unique health profile.
         </p>
         <p className="text-lg leading-relaxed text-muted-foreground">
           Initially, <strong>Vita Health</strong> will focus on nutrition
-          management by analyzing users' dietary intake through photo uploads and
+          management by analyzing users&apos; dietary intake through photo uploads and
           manual entry, generating detailed nutritional breakdowns, identifying
           potential health risks, and suggesting healthier alternatives. Users
           receive real-time insights and actionable recommendations, helping them

@@ -37,7 +37,7 @@ export default function ProductsPage() {
             // Wrap the entire card content in a Link
             <Link key={product.name} href={product.href} className="group block">
               <div className="flex h-full flex-col overflow-hidden rounded-lg border bg-card shadow-sm transition-shadow group-hover:shadow-md">
-                <div className="flex flex-grow flex-col p-6">
+                <div className="flex grow flex-col p-6">
                   <div className="mb-4 flex items-center justify-between">
                     <h3 className="text-xl font-semibold">{product.name}</h3>
                     {/* Conditionally render icon OR image */}
@@ -47,7 +47,7 @@ export default function ProductsPage() {
                       <product.icon className="size-8 text-muted-foreground" />
                     ) : null}
                   </div>
-                  <p className="flex-grow text-muted-foreground">
+                  <p className="grow text-muted-foreground">
                     {product.description}
                   </p>
                   {product.status && (
