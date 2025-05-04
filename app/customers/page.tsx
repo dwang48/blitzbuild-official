@@ -193,7 +193,7 @@ export default function CustomersPage() {
                     <ul className="space-y-1">
                       {study.results.map((result, index) => (
                         <li key={index} className="flex items-start">
-                          <Star className="mr-2 mt-1 size-4 flex-shrink-0 text-primary" />
+                          <Star className="mr-2 mt-1 size-4 shrink-0 text-primary" />
                           <span className="text-sm">{result}</span>
                         </li>
                       ))}

@@ -5,10 +5,12 @@
  */
 export const publicRoutes = [
   "/",
-  // "/blog",
-  // "/docs",
+  "/about",
+  "/blog", 
+  "/docs",
   "/guides",
-  // "/pricing",
+  "/pricing",
+  "/products",
   "/terms",
   "/privacy",
   "/security",
@@ -16,7 +18,7 @@ export const publicRoutes = [
   "/use-cases",
   "/contact",
   "/case-studies",
-  // "/customers",
+  "/customers",
 ];
 
 /**

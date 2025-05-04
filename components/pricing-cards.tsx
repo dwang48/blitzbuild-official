@@ -177,9 +177,9 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
           Email{" "}
           <a
             className="font-medium text-primary hover:underline"
-            href="mailto:support@saas-starter.com"
+            href="mailto:info@blitzbuild.net"
           >
-            support@saas-starter.com
+            info@blitzbuild.net
           </a>{" "}
           for to contact our support team.
           <br />
