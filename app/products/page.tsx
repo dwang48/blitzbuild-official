@@ -12,11 +12,12 @@ export const metadata: Metadata = {
 const products = [
   {
     name: "Vita Health",
-    description: "Your personal AI health agent for iOS and Android. Currently under development.",
+    description: "Your personal AI health agent for iOS and Android. Manage chronic conditions through personalized nutrition tracking and lifestyle guidance. Visit myvita.health to learn more.",
     icon: Smartphone, // Or use an Image component if you have a logo
     image: "/images/vita-logo.png", // Example image path - ensure this exists
     href: "/products/vita-health", // Updated link to the dedicated page
     status: "In Development",
+    website: "https://myvita.health",
   },
   // Add more products here as needed
 ];
@@ -50,11 +51,23 @@ export default function ProductsPage() {
                   <p className="grow text-muted-foreground">
                     {product.description}
                   </p>
-                  {product.status && (
-                    <span className="mt-4 inline-block rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground">
-                      {product.status}
-                    </span>
-                  )}
+                  <div className="mt-4 flex items-center justify-between">
+                    {product.status && (
+                      <span className="inline-block rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground">
+                        {product.status}
+                      </span>
+                    )}
+                    {product.website && (
+                      <a
+                        href={product.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-primary hover:underline"
+                      >
+                        Visit Website →
+                      </a>
+                    )}
+                  </div>
                 </div>
                 {/* Removed the optional link at the bottom as the whole card is now a link */}
               </div>

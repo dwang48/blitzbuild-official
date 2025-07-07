@@ -10,25 +10,91 @@ import {
   BookOpen,
   Database,
   Zap,
+  ExternalLink,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Vita Health | Blitzbuild Products",
+  title: "Vita Health - AI-Powered Chronic Health Management App | myvita.health",
   description:
-    "Learn about Vita Health, an AI-powered mobile app for managing chronic health conditions through nutrition and lifestyle.",
+    "Discover Vita Health at myvita.health - an AI-powered mobile app for managing chronic health conditions like diabetes and ulcerative colitis through personalized nutrition tracking and lifestyle guidance.",
+  keywords: "Vita Health, myvita.health, AI health app, chronic disease management, diabetes management, nutrition tracking, health monitoring, lifestyle guidance, personalized health",
+  openGraph: {
+    title: "Vita Health - AI-Powered Health Management",
+    description: "Transform your health with Vita Health's AI-powered nutrition tracking and personalized guidance for chronic conditions.",
+    url: "https://myvita.health",
+    siteName: "Vita Health",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vita Health - AI-Powered Health Management",
+    description: "Transform your health with Vita Health's AI-powered nutrition tracking and personalized guidance for chronic conditions.",
+  },
+  alternates: {
+    canonical: "https://myvita.health",
+  },
 };
 
 export default function VitaHealthPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Vita Health",
+    "description": "AI-powered mobile app for managing chronic health conditions through personalized nutrition tracking and lifestyle guidance",
+    "url": "https://myvita.health",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": ["iOS", "Android"],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Blitzbuild Software"
+    },
+    "featureList": [
+      "AI-powered nutrition tracking",
+      "Personalized health recommendations",
+      "Photo-based food logging",
+      "Chronic condition management",
+      "Progress tracking and visualization",
+      "Educational health content"
+    ],
+    "targetAudience": {
+      "@type": "Audience",
+      "audienceType": "People with chronic health conditions"
+    }
+  };
+
   return (
-    <div className="container mx-auto max-w-4xl px-4 py-12 md:px-6">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <div className="container mx-auto max-w-4xl px-4 py-12 md:px-6">
       {/* Header Section */}
       <div className="mb-10 border-b pb-6">
-        <h1 className="mb-2 text-4xl font-bold tracking-tight text-primary">
-          Vita Health
-        </h1>
-        <p className="text-xl text-muted-foreground">
-          Personalized Nutrition & Lifestyle Management for Chronic Conditions
-        </p>
+        <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
+          <div>
+            <h1 className="mb-2 text-4xl font-bold tracking-tight text-primary">
+              Vita Health
+            </h1>
+            <p className="text-xl text-muted-foreground">
+              Personalized Nutrition & Lifestyle Management for Chronic Conditions
+            </p>
+          </div>
+          <a
+            href="https://myvita.health"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg border border-primary bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            Visit Official Website
+            <ExternalLink className="size-4" />
+          </a>
+        </div>
       </div>
 
       {/* Product Overview Section */}
@@ -65,7 +131,16 @@ export default function VitaHealthPage() {
         <p className="text-lg leading-relaxed text-muted-foreground">
           Long-term plans also include collaboration with healthcare providers to
           enhance health outcomes through data-driven care coordination and
-          clinical insights.
+          clinical insights. Learn more about Vita Health at{" "}
+          <a
+            href="https://myvita.health"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary"
+          >
+            myvita.health
+          </a>
+          .
         </p>
       </section>
 
@@ -158,6 +233,37 @@ export default function VitaHealthPage() {
           </div>
         </div>
       </section>
+
+      {/* Call-to-Action Section */}
+      <section className="mb-12">
+        <div className="rounded-lg border bg-card p-8 text-center">
+          <h2 className="mb-4 text-2xl font-semibold">Ready to Transform Your Health?</h2>
+          <p className="mb-6 text-lg text-muted-foreground">
+            Join thousands of users who are already using Vita Health to manage their chronic conditions and improve their quality of life.
+          </p>
+          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <a
+              href="https://myvita.health"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              Learn More at myvita.health
+              <ExternalLink className="size-4" />
+            </a>
+            <a
+              href="https://myvita.health/download"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-primary px-6 py-3 text-base font-medium text-primary transition-colors hover:bg-primary/10"
+            >
+              Download the App
+              <ExternalLink className="size-4" />
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
+    </>
   );
 } 
